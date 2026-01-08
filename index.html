@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>React Subtitle Player</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Styles for react-h5-audio-player -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/react-h5-audio-player@3.8.6/lib/styles.css" />
+    <style>
+      /* Custom scrollbar for subtitle list */
+      .custom-scrollbar::-webkit-scrollbar {
+        width: 8px;
+      }
+      .custom-scrollbar::-webkit-scrollbar-track {
+        background: #f1f1f1;
+      }
+      .custom-scrollbar::-webkit-scrollbar-thumb {
+        background: #cbd5e1;
+        border-radius: 4px;
+      }
+      .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+        background: #94a3b8;
+      }
+      
+      /* Overrides for the audio player to match Tailwind aesthetics */
+      .rhap_container {
+        box-shadow: none !important;
+        background-color: transparent !important;
+        padding: 10px 0 !important;
+      }
+      .rhap_time {
+        color: #4b5563 !important;
+        font-family: monospace;
+      }
+      .rhap_progress-filled {
+        background-color: #2563eb !important;
+      }
+      .rhap_download-progress {
+        background-color: #e5e7eb !important;
+      }
+      .rhap_button-clear {
+        color: #374151 !important;
+      }
+      .rhap_button-clear:hover {
+        color: #2563eb !important;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react-h5-audio-player": "https://esm.sh/react-h5-audio-player@^3.10.1",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0"
+  }
+}
+</script>
+</head>
+  <body class="bg-gray-50 text-gray-800">
+    <div id="root"></div>
+  </body>
+</html>

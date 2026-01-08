@@ -1,0 +1,5 @@
+{
+  "name": "React Subtitle Player",
+  "description": "A modernized audio player for language learning that synchronizes MP3 playback with SRT subtitles using React and react-h5-audio-player.",
+  "requestFramePermissions": []
+}
